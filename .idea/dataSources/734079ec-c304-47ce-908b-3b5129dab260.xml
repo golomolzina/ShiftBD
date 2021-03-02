@@ -790,7 +790,7 @@ false Zulu
       <ObjectId>13442</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>511</IntrospectionStateNumber>
+      <IntrospectionStateNumber>517</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <role id="3" parent="1" name="pg_execute_server_program">
@@ -868,7 +868,7 @@ UC/10
       <ObjectId>16394</ObjectId>
       <StateNumber>494</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>512</IntrospectionStateNumber>
+      <IntrospectionStateNumber>518</IntrospectionStateNumber>
     </schema>
     <extension id="18" parent="2" name="adminpack">
       <ObjectId>16384</ObjectId>
@@ -985,119 +985,177 @@ UC/10
       <Owner>postgres</Owner>
       <StateNumber>510</StateNumber>
     </table>
-    <table id="33" parent="17" name="shops">
+    <table id="33" parent="17" name="product_groups">
+      <ObjectId>16410</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>516</StateNumber>
+    </table>
+    <table id="34" parent="17" name="products">
+      <ObjectId>16407</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>513</StateNumber>
+    </table>
+    <table id="35" parent="17" name="shops">
       <ObjectId>16398</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>501</StateNumber>
     </table>
-    <table id="34" parent="17" name="shops_managers">
+    <table id="36" parent="17" name="shops_managers">
       <ObjectId>16401</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>504</StateNumber>
     </table>
-    <column id="35" parent="31" name="id">
+    <column id="37" parent="31" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>498</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="36" parent="31" name="shop_id">
+    <column id="38" parent="31" name="shop_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>498</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="37" parent="31" name="employee_id">
+    <column id="39" parent="31" name="employee_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>498</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="38" parent="31" name="total_amount">
+    <column id="40" parent="31" name="total_amount">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>498</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="39" parent="31" name="date">
+    <column id="41" parent="31" name="date">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>498</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="40" parent="32" name="id">
+    <column id="42" parent="32" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="41" parent="32" name="order_id">
+    <column id="43" parent="32" name="order_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="42" parent="32" name="product_id">
+    <column id="44" parent="32" name="product_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="32" name="quantity">
+    <column id="45" parent="32" name="quantity">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="44" parent="32" name="quantity_type_id">
+    <column id="46" parent="32" name="quantity_type_id">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="45" parent="32" name="amount">
+    <column id="47" parent="32" name="amount">
       <Position>6</Position>
       <DataType>money|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>790</TypeId>
     </column>
-    <column id="46" parent="32" name="discount">
+    <column id="48" parent="32" name="discount">
       <Position>7</Position>
       <DataType>money|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>790</TypeId>
     </column>
-    <column id="47" parent="32" name="total_sum">
+    <column id="49" parent="32" name="total_sum">
       <Position>8</Position>
       <DataType>money|0s</DataType>
       <StateNumber>510</StateNumber>
       <TypeId>790</TypeId>
     </column>
-    <column id="48" parent="33" name="id">
+    <column id="50" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>516</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="51" parent="33" name="group_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>516</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="33" name="parent_group_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>516</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="53" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>513</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="54" parent="34" name="group_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>513</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="55" parent="34" name="price">
+      <Position>3</Position>
+      <DataType>money|0s</DataType>
+      <StateNumber>513</StateNumber>
+      <TypeId>790</TypeId>
+    </column>
+    <column id="56" parent="34" name="quantity_type_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>513</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="34" name="name">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>513</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="58" parent="35" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>501</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="49" parent="33" name="name">
+    <column id="59" parent="35" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <StateNumber>501</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="33" name="address">
+    <column id="60" parent="35" name="address">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>501</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="34" name="manager_id">
+    <column id="61" parent="36" name="manager_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>504</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="52" parent="34" name="shop_id">
+    <column id="62" parent="36" name="shop_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>504</StateNumber>
